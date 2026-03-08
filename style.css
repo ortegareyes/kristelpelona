@@ -570,37 +570,6 @@
         .snoopy-btn:active {
             transform: scale(0.95);
         }
-        /* Back to Start Button */
-        .back-btn {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background: linear-gradient(135deg, #E2BCB7 0%, #B67162 100%);
-            color: white;
-            border: none;
-            padding: 20px 60px;
-            font-size: 14px;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(182, 113, 98, 0.3);
-            font-family: "Gaegu", sans-serif;
-            font-weight: 300;
-            z-index: 100;
-            white-space: normal;
-            text-align: center;
-            width: auto;
-            max-width: 250px;
-        }
-
-        .back-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(182, 113, 98, 0.5);
-        }
-
-        .back-btn:active {
-            transform: scale(0.95);
-        }
         @keyframes slideIn {
             from {
                 opacity: 0;
