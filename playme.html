@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️</title>
+    <link rel="icon" type="image/x-icon" href="asset/imgs/flower.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Info Button (top-left) -->
+        <button class="info-btn" id="playerInfoBtn" title="Info">i</button>
+
+        <!-- Exit Button (top-right) -->
+        <button class="exit-btn-player" id="playerExitBtn" title="Exit">✕</button>
+
+        <!-- Info Modal -->
+        <div class="player-info-modal" id="playerInfoModal">
+            <div class="player-info-content" id="playerInfoContent">
+                <h2>Feliz dia de la mujer mi amor </h2>
+                <p>Pues en este dia quiero decirte lo mucho que te amo y lo especial que eres para mi, gracias por hacerme muy feliz sin duda eres el amor de mi vida, pues toma pa que te enamores asdjasjdsajd se quedaba con eso pegado, muchas gracias por hacerme muy feliz siempre estare a tu lado haciendote feliz,TE AMOOO MUCHOOOOOO!!!!!</p>
+                <button class="close-modal-btn">Cerrar</button>
+            </div>
+        </div>
+
+        <div class="container">
+        <div class="player">
+            <div class="album-art">
+                <img src="asset/imgs/miguapa.jpeg" alt="1">
+                <img src="asset/imgs/miguapa2.png" alt="2">
+                <img src="asset/imgs/miguapa3.jpeg" alt="3">
+            </div>
+
+            <div class="player-content">
+                <div class="song-info">
+                    <div class="song-title">More</div>
+                    <div class="song-artist">Esto es para que te enamore moreee moreee mi peloncita</div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="currentTime">0:00</span>
+                        <span id="duration">4:06</span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="prevBtn" title="Previous">⏮</button>
+                    <button id="playBtn" class="play-btn" title="Play">▶</button>
+                    <button id="nextBtn" title="Next">⏭</button>
+                </div>
+
+                <!-- Hidden audio element controlled by JS -->
+                <audio id="audio" preload="metadata">
+                    <source src="asset/song/cancion1pelona.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <div class="playlist">
+                    <div class="playlist-dot active" data-song="0" title="Himig ng Pagibig"></div>
+                    <div class="playlist-dot" data-song="1" title="Panalangin"></div>
+                    <div class="playlist-dot" data-song="2" title="Id Rather"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Snoopy Button outside the player -->
+        <button id="snoopyBtn" class="snoopy-btn">Presiona aquí para obtener tu carro amor</button>
+
+        <!-- Back to Start Button -->
+        <button id="backBtn" class="back-btn">click para volver al inicio mi pelona</button>
+    </div>
+
+    <!-- Snoopy Images Modal -->
+    <div class="snoopy-modal" id="snoopyModal">
+        <div class="snoopy-content">
+            <img src="asset/imgs/snoopy1.jpg" alt="Snoopy 1">
+            <img src="asset/imgs/snoopy2.jpg" alt="Snoopy 2">
+            <img src="asset/imgs/snoopy3.jpg" alt="Snoopy 3">
+            <img src="asset/imgs/snoopy4.jpg" alt="Snoopy 4">
+            <button class="close-snoopy-btn">Cerrar</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
